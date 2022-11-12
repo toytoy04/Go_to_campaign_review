@@ -1,0 +1,589 @@
+@charset "utf-8";
+/* index
+0. Reset
+1. Common
+2. Top-layout
+3. Second-layout
+4. Third-layout
+5. Contact-layout
+6. Tab
+7. Mobile
+8. Replacement
+*/
+
+/* font */
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');*/
+
+/**************************************************
+0. Reset
+***************************************************/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+table,
+tr,
+th,
+td,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Helvevetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="submit"],
+input[type="image"],
+input[type="date"],
+textarea {
+    -webkit-appearance: none;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+/**************************************************
+1. Common
+***************************************************/
+/*----------------------------------
+common
+----------------------------------*/
+* {
+    font-family: "Tsukushi B Round Gothic";
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #111;
+    display: inline-block;
+}
+/*----------------------------------
+header
+----------------------------------*/
+header {
+    height: 140px;
+    background-image: url("../images/main-image.png");
+    background-position: 0% 70%;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px;
+}
+
+.header-area {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header-left-top {
+    display: flex;
+}
+
+.header-left-bottom {
+    display: flex;
+}
+
+.header-left-bottom h2 {
+    display: block;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 0 26px;
+}
+
+.logo-text {
+    font-family: "PoetsenOne";
+    color: #5a8400;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.header-right-top {
+    display: flex;
+    margin-left: 200px;
+}
+
+.header-right-top p {
+    display: inline-block;
+    text-align: right;
+    margin-left: 24px;
+}
+
+.header-right-bottom {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.header-list {
+    display: flex;
+    vertical-align: middle;
+}
+
+.header-list input {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0;
+    line-height: 42px;
+    width: 180px;
+    text-align: left;
+}
+
+.header-list input:hover {
+    cursor: pointer;
+}
+
+li>a, li>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ul > p {
+    font-size: 20px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+.triple-bar {
+    font-size: 60px;
+    display: block;
+    padding: 10px;
+    margin: 10px 0 40px;
+}
+
+.tasklist {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 5%;
+    right: 2%;
+}
+
+.tasklist a {
+    font-size: 16px;
+}
+
+/*----------------------------------
+footer
+----------------------------------*/
+
+/**************************************************
+2. Top-layout
+***************************************************/
+.top {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-left {
+    width: 200px;
+    margin: 8px 0;
+    padding: 0 8px;
+}
+
+.top-header-top {
+    display: flex;
+}
+
+.top-header-top img {
+    padding: 10px 5px 0;
+}
+
+.top-header-top p {
+    font-size: 16px;
+    color: #5a8400;
+    margin: 15 0 0;
+    font-weight: bold;
+}
+
+.top-header-bottom h2 {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 32px;
+}
+
+.menu h3 {
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: "PoetsenOne";
+    letter-spacing: 3px;
+}
+
+.top-menu {
+    padding: 0;
+    height: 80vh;
+}
+
+.top-menu a, .top-menu p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.top-menu a:hover, .top-menu p:hover{
+    cursor: pointer;
+    background-color: #bae400;
+}
+
+.top-menu input {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0;
+    line-height: 42px;
+    width: 180px;
+    text-align: left;
+}
+
+.top-menu input:hover {
+    cursor: pointer;
+    background-color: #bae400;
+}
+.top-right {
+    width: 100%;
+    background-image: url("../images/main-image.png");
+    filter: saturate(180%);
+    filter: contrast(150%);
+    background-size: cover;
+}
+
+footer small {
+    color: #5a8400;
+}
+
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 10;
+    display: none;
+}
+
+.top-tasklist {
+    position: fixed;
+    top:40%;
+    left: 38%;
+    background-color: white;
+    height: 30%;
+    width: 20%;
+    border: 1px ;
+    z-index: 20;
+}
+
+footer small{
+    color: #5A8400;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-weight: bold;
+}
+/**************************************************
+3. travel.create
+***************************************************/
+
+.travel-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 40px;
+    background-color: rgba(191, 230, 18, 0.6);
+    font-size: 20px;
+}
+
+.travel-header h3 {
+    font-size: 24px;
+}
+
+.travel-header-right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.travel-header-right p, label {
+    vertical-align: top;
+}
+
+.travel-header button {
+    font-size: 20px;
+    border: none;
+    background-color: rgba(191, 230, 18, 0.6);;
+    padding: 15px;
+    box-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+
+.travel-header-right button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px rgba(0,0,0,0.3);
+}
+
+.travel-container {
+    display: flex;
+    width: 1000px;
+    padding: 20px 40px;
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 0.4rem;
+}
+
+.submit {
+    display: block;
+    align-items: flex-end;
+    margin: 50px 250px 0;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+    border: none;
+    background-color: rgba(191, 230, 18, 0.6);;
+    padding: 15px;
+    box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.submit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px rgba(0,0,0,0.3);
+}
+
+.form {
+    line-height: 60px;
+    letter-spacing: 0.4rem;
+}
+
+.travel-left {
+    width: 50%;
+}
+
+.travee-right {
+    width: 50%;
+}
+
+.travel-bottom {
+    display: flex;
+    border-top: 1px solid #000;
+    padding: 20px;
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 0.4rem;
+    margin-left: 10px;
+}
+
+.bottom-form {
+    margin-right: 30px;
+}
+/**************************************************
+4. shop.show
+***************************************************/
+
+.shop-header {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    height: 40px;
+    background-color: rgba(191, 230, 18, 0.6);
+    font-size: 20px;
+}
+
+.shop-header-left {
+    display: inline-block;
+    display: flex;
+}
+
+.shop-list {
+    margin-left: 20px;
+}
+
+.shop-header-left a {
+    margin-left: 10px;
+}
+
+.shop-header button {
+    margin-left: auto;
+    margin-right: 0;
+    line-height: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(191, 230, 18, 0.6);;
+    padding: 15px;
+    box-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+
+.shop-header button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px rgba(0,0,0,0.3);
+}
+
+.shop-container {
+    display: flex;
+    width: 1000px;
+    padding: 30px 60px;
+    font-size: 24px;
+    height: 50vh;
+    line-height: 60px;
+    letter-spacing: 0.4rem;
+}
+
+.shop-container img {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+.shop-exterior {
+    display: flex;
+}
+
+.shop-exterior p {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.shop-show-left {
+    width: 50%;
+}
+
+.shop-show-right {
+    width: 50%;
+}
+
+.map-info {
+    display: flex;
+}
+
+.shop-edit {
+    width: 100px;
+    display: block;
+    align-items: flex-end;
+    margin: 50px 250px 0;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+    border: none;
+    background-color: rgba(191, 230, 18, 0.6);;
+    padding: 15px;
+    box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.shop-edit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px rgba(0,0,0,0.3);
+}
+
+/**************************************************
+5. Contact-layout
+***************************************************/
+
+/**************************************************
+6. Tab
+***************************************************/
+@media screen and (max-width: 959px) {
+    /*----------------------------------
+common
+----------------------------------*/
+
+    /*----------------------------------
+top
+----------------------------------*/
+
+    /*----------------------------------
+second
+----------------------------------*/
+
+    /*----------------------------------
+third
+----------------------------------*/
+
+    /*----------------------------------
+contact
+----------------------------------*/
+}
+
+/**************************************************
+7. Mobile
+***************************************************/
+@media screen and (max-width: 767px) {
+    /*----------------------------------
+common
+----------------------------------*/
+
+    /*----------------------------------
+top
+----------------------------------*/
+
+    /*----------------------------------
+second
+----------------------------------*/
+
+    /*----------------------------------
+third
+----------------------------------*/
+
+    /*----------------------------------
+contact
+----------------------------------*/
+}
+
+/**************************************************
+8. Replacement
+***************************************************/
