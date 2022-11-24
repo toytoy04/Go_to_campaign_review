@@ -41,7 +41,7 @@
                     <li class="menu-item"><a href="{{ route('travel.index') }}">申込状況照会</a></li>
                     <li class="menu-item"><a href="{{ route('travel.searchPeriod') }}">期間集計</a></li>
                     <li class="menu-item"><a href="{{ route('travel.summary') }}">CP進捗状況</a></li>
-                    <li class="menu-item"><a href="{{ route('shop.show') }}">店舗情報</a></li>
+                    <li class="menu-item"><a href="{{ route('shop.show', ['shop' => Auth::id()]) }}">店舗情報</a></li>
                     <li class="menu-item"><a href="{{ route('user.show') }}">スタッフ情報</a></li>
                     <li class="menu-item"><a href="{{ route('logout') }}">ログアウト</a></li>
                     </ul>

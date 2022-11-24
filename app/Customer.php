@@ -17,4 +17,8 @@ class Customer extends Model
     public function travels(){
         return $this->hasMany('App\Travel');
     }
+
+    public function mylists(){
+        return $this->belongsToMany('App\Mylist');
+    }
 }

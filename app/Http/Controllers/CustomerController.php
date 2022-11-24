@@ -8,6 +8,7 @@ use App\Customer;
 use App\User;
 use Auth;
 use App\Http\Requests\CustomerRequest;
+use App\Mylist;
 
 class CustomerController extends Controller
 {
@@ -53,5 +54,12 @@ class CustomerController extends Controller
         $regions = Region::all();
 
         return redirect()->route('travel.create', ['regions' => $regions, 'customer' => $customer]);
+    }
+
+    public function listup()
+    {
+        $customers = Customer::all();
+        $mylists = Mylist::all();
+        return view('customer.list', ['customers' => $customers, 'mylists' => $mylists]);
     }
 }

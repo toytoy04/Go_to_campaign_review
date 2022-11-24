@@ -96,3 +96,23 @@ Route::post('task/{travel}/store', 'TaskController@store')->name('task.store');
 Route::post('task/{travel}/update', 'TaskController@update')->name('task.update');
 
 Route::delete('task/{travel}/delete', 'TaskController@delete')->name('task.delete');
+
+Route::get('customer/listup', 'CustomerController@listup')->name('customer.listup');
+
+Route::post('mylist/store', 'MylistController@store')->name('mylist.store');
+
+Route::get('mylist/index', 'MylistController@index')->name('mylist.index');
+
+Route::post('mylist/index', 'MylistController@index')->name('mylist.index');
+
+Route::post('customer/mylist/create', 'MylistController@create')->name('mylist.create');
+
+Route::get('customer/mylist/edit/{mylist}', 'MylistController@edit')->name('mylist.edit');
+
+Route::post('customer/mylist/update/{mylist}', 'MylistController@update')->name('mylist.update');
+
+Route::get('customer/mylist/delete', 'MylistController@delete')->name('mylist.delete');
+
+Route::post('customer/mylist/delete/{mylist}', 'MylistController@delete')->name('mylist.delete');
+
+Route::get('customer/mylist', 'CustomerController@index')->name('customer.index');
